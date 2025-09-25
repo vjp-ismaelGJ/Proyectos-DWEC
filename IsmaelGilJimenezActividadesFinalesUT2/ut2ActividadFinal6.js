@@ -14,4 +14,8 @@ console.log("Se añaden 2 valores delante: " + arrayValores);
 arrayValores.push(45,"Loco","extra");
 console.log("Se añaden 3 valores al final: " + arrayValores);
 
-arrayValores.splice();
+arrayValores.splice(3, 3);
+console.log("Se eliminan las posiciones 3, 4 y 5: " + arrayValores);
+
+arrayValores.splice(arrayValores.length - 1, 0, "The last", "Joker");
+console.log("Se insertan 2 elementos antes del último: " + arrayValores);
