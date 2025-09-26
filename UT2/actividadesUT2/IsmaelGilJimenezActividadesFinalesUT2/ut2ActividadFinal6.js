@@ -6,16 +6,26 @@
 // NOTA: En cada cambio muestra los elementos del array separados por u utilices bucles, utiliza las funciones predefinidas de arrays).
 
 let arrayValores = ["Paco", 15, "Sua", 33];
-console.log("Array por defecto: " + arrayValores);
+for (let index = 0; index < arrayValores.length; index++) {
+    console.log(arrayValores.join('#'));
+}
 
 arrayValores.unshift("Cristiano", "Ronaldo");
-console.log("Se añaden 2 valores delante: " + arrayValores);
+for (let index = 0; index < arrayValores.length; index++) {
+    console.log(arrayValores.join('#'));
+}
 
 arrayValores.push(45,"Loco","extra");
-console.log("Se añaden 3 valores al final: " + arrayValores);
+for (let index = 0; index < arrayValores.length; index++) {
+    console.log(arrayValores.join('#'));
+}
 
 arrayValores.splice(3, 3);
-console.log("Se eliminan las posiciones 3, 4 y 5: " + arrayValores);
+for (let index = 0; index < arrayValores.length; index++) {
+    console.log(arrayValores.join('#'));
+}
 
 arrayValores.splice(arrayValores.length - 1, 0, "The last", "Joker");
-console.log("Se insertan 2 elementos antes del último: " + arrayValores);
+for (let index = 0; index < arrayValores.length; index++) {
+    console.log(arrayValores.join('#'));
+}
